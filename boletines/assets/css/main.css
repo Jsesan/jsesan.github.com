@@ -40,8 +40,6 @@ a{
     box-shadow: 5px 5px 6px black;
     border-radius: 0.5em;
     padding: 1em;
-    overflow-x:hidden ;
-    overflow-y: scroll;
 }
 .info-plane{
     max-width: 960px;
@@ -51,8 +49,7 @@ a{
     background-color: #ffffff;
     position: relative;
     padding: 1em;
-    overflow-x:hidden ;
-    overflow-y: scroll;
+
 }
 .acciones{
     position: absolute;
