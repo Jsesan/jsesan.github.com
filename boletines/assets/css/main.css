@@ -40,6 +40,8 @@ a{
     box-shadow: 5px 5px 6px black;
     border-radius: 0.5em;
     padding: 1em;
+    overflow-x:hidden ;
+    overflow-y: scroll;
 }
 .info-plane{
     max-width: 960px;
@@ -49,6 +51,8 @@ a{
     background-color: #ffffff;
     position: relative;
     padding: 1em;
+    overflow-x:hidden ;
+    overflow-y: scroll;
 }
 .acciones{
     position: absolute;
@@ -93,6 +97,8 @@ a{
     margin-right: 10px;
     position: absolute;
     left: 1em;
+    overflow-x:hidden ;
+    overflow-y: scroll;
 }
 td{
     font-size: 14px;
@@ -119,7 +125,7 @@ td{
     border-style: solid;
     border-color: black;
     border-spacing: 0px;
-    position: absolute;
+    position: relative;
     bottom: 3em;
     left: 2em;
     
@@ -169,7 +175,7 @@ td{
 .position-plane{
     background-color: #2196F3;
     color: white;
-    padding: 10px;
+    padding: 0.5em;
     border-radius: 4px;
     margin-right: 0.5em;
 }
