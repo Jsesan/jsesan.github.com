@@ -35,11 +35,12 @@ a{
     max-width: 960px;
     max-height: 500px;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: #ffffff;
     box-shadow: 5px 5px 6px black;
     border-radius: 0.5em;
     padding: 1em;
+    overflow: scroll;
 }
 .info-plane{
     max-width: 960px;
@@ -49,6 +50,7 @@ a{
     background-color: #ffffff;
     position: relative;
     padding: 1em;
+    overflow: scroll;
 
 }
 .acciones{
@@ -120,9 +122,10 @@ td{
     border-style: solid;
     border-color: black;
     border-spacing: 0px;
-    position: absolute;
+    position: fixed;
     bottom: 3em;
     left: 2em;
+    
     
 }
 
@@ -158,6 +161,7 @@ td{
 }
 .img-plane{
     width: 35%;
+    max-width: 100%;
     box-shadow: 5px 5px 6px black;
     position: relative;
     left: 60%;
@@ -180,3 +184,41 @@ td{
 }
 
 
+@media (min-height:500px){
+.contenido{
+    height: 500px;
+}
+
+}
+
+@media (max-width:600px){
+.contenido{
+    padding: 1em;
+}
+.contenido td{
+    display: block;
+    width: 100%;
+}
+.contenido th{
+    display: none;
+}
+.contenido td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1976D2;
+}
+.title-plane{
+    font-size: 1.5em;
+}
+.table-plane table{
+    width: 100%;
+}
+.table-plane thead{
+    display: none;
+}
+.table-plane tr:nth-of-type(2n){
+    background-color: inherit;
+}
+
+
+}
