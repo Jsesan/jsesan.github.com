@@ -1,0 +1,101 @@
+header{
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1em;
+    
+}
+.logo{
+    display: inline-block;
+    height: 95%;
+    margin-left: 0.75em;
+    
+}
+
+body{
+    line-height: 1;
+	margin:0;
+    overflow:hidden;
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+img.iconos{
+    width: 56px;
+    border-radius: 50%;
+}
+
+.rueda {
+    position: absolute;
+    z-index: 2;
+    bottom: 50%;
+    right: 50%;
+    width: 60px;
+    height: 60px;
+    
+    transition: all 1s;
+  }
+
+  .rueda span {
+    width: 60px;
+    height: 60px;
+    background: black;
+    /*box-shadow: 5px solid #DE5513;-+----*/
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 22px;
+    z-index:999;
+    box-shadow: 0 0 20px rgba(220, 220, 220, 0.50);   
+  }
+
+  .rueda a{
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    display:block;
+    color:#fff;
+    z-index:99;
+    font-size:22px;
+    transition: all .4s cubic-bezier(.68, 1, .265, 1);
+    box-shadow: 0 0 20px rgba(220, 220, 220, 0.50);
+  }
+  
+  .rueda.open a:nth-child(1) {
+    transform: translate(0,-70px);
+  }
+  .rueda.open a:nth-child(2) {
+    transform: translate(-65px,-25px);
+  }
+  .rueda.open a:nth-child(3) {
+    transform: translate(-37px,57px);
+  }
+  .rueda.open a:nth-child(4) {
+        transform: translate(65px,-25px);
+  }
+  .rueda.open a:nth-child(5) {
+        transform: translate(37px,57px);
+  }
+    
+  /*
+  .rueda-btn.open a:nth-child(6) {
+        transform: translate(0,55px);
+  }*/
+  
