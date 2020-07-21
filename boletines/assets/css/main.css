@@ -218,7 +218,10 @@ td{
 }
 .table-plane tr:nth-of-type(2n){
     background-color: inherit;
+    display: flex;
 }
 
 
 }
+
+
