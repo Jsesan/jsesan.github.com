@@ -19,18 +19,43 @@ h1{
 }
 
 body{
+    
+	  margin:0;
+    
+
+}
+
+.contenedor{
+    height: 100vh;
     line-height: 1;
-	margin:0;
     overflow:hidden;
     background: #34e89e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.contenido{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 img.iconos{
     width: 56px;
     border-radius: 50%;
+}
+
+img.cruz{
+  width: 56px;
+  border-radius: 50%;
+}
+
+.drag{
+  width: 46px;
+  position: absolute;
+  bottom: 10px;
+  right: 6px;
 }
 
 .rueda {
@@ -93,9 +118,11 @@ img.iconos{
   .rueda.open a:nth-child(5) {
         transform: translate(37px,57px);
   }
-    
-  /*
-  .rueda-btn.open a:nth-child(6) {
-        transform: translate(0,55px);
-  }*/
-  
+    @media(max-width:600px)
+    {
+      .rueda{
+        position: absolute;
+        bottom: 40%;
+        right: 40%;
+      }
+    }
