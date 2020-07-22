@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+   
+    
+}
+
+.contenedor{
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-size: 1.4em;
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
+}
+
+.img-titulos{
+    height: 1em;
+    position: absolute;
+    bottom: 35%;
+    margin-left: 5px;
+}
+
+.img-champ{
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8%;
+}
+
+.nombre-champ{
+    position: relative;
+}
+
+th{
+    padding: 0.2em;
+}
+
+td{
+    padding: 0.2em;
+}
+
+.contenido{
+    max-width: 960px;
+    max-height: 600px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 0.5em;
+    font-size: 25px;
+    color:white;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    
+}
