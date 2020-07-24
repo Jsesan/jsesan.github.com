@@ -41,10 +41,16 @@ a{
     border-radius: 0.5em;
     padding: 1em;
     overflow: scroll;
+    
 }
+
+.contenido::-webkit-scrollbar {display: none;}
+
+.info-plane::-webkit-scrollbar {display: none;}
+
 .info-plane{
     max-width: 960px;
-    max-height: 600px;
+    max-height: 700px;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
@@ -123,7 +129,7 @@ td{
     border-color: black;
     border-spacing: 0px;
     position: fixed;
-    bottom: 3em;
+    top: 14em;
     left: 2em;  
 }
 
@@ -186,6 +192,9 @@ td{
     .contenido{
         height: 500px;
     }
+    .info-plane{
+        height: 500px;
+    }
 }
 
 @media (max-width:600px){
@@ -219,24 +228,40 @@ td{
         width: 50%;
         overflow: scroll;
         left: 0.5em;
-        top: 35%;
+        top: 36%;
         font-size: 10px;
     }
 
     .table-plane caption{
         border: none;
     }
-
+    /*
     .table-plane tr:nth-of-type(2n){
         background-color: inherit;
         display: flex;
     }
-
+    */
     .img-plane{
         display: block;
         position: absolute;
         right: 0.5em;
         top: 15em;
+    }
+    /*Tabla principal para celulares*/
+    .main-table{
+        padding: 1em;
+    }
+    .main-table td{
+        display: block;
+        width: 100%;
+    }
+    .main-table th{
+        display: none;
+    }
+    .main-table td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #1976D2;
     }
 }
 
