@@ -124,9 +124,7 @@ td{
     border-spacing: 0px;
     position: fixed;
     bottom: 3em;
-    left: 2em;
-    
-    
+    left: 2em;  
 }
 
 .table-plane td, .table-plane tr{
@@ -185,43 +183,55 @@ td{
 
 
 @media (min-height:500px){
-.contenido{
-    height: 500px;
-}
-
+    .contenido{
+        height: 500px;
+    }
 }
 
 @media (max-width:600px){
-.contenido{
-    padding: 1em;
-}
-.contenido td{
-    display: block;
-    width: 100%;
-}
-.contenido th{
-    display: none;
-}
-.contenido td:nth-of-type(1){
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #1976D2;
-}
-.title-plane{
-    font-size: 1.5em;
-}
-.table-plane table{
-    width: 100%;
-}
-.table-plane thead{
-    display: none;
-}
-.table-plane tr:nth-of-type(2n){
-    background-color: inherit;
-    display: flex;
-}
+    .contenido{
+        padding: 1em;
+        overflow: scroll;
+    }
+    .table-plane td{
+        font-size: 10px;
+        width: 100%;
+    }
+    .contenido th{
+        display: none;
+    }
+    .contenido td:nth-of-type(1){
+        font-weight: bold;
+        color: #1976D2;
+    }
+    .title-plane{
+        font-size: 1.5em;
+    }
 
+    .description{
+        display: block;
+        font-size: 10px;
+    }
 
+    .table-plane {
+        border: none;
+        width: 50%;
+        overflow: scroll;
+        left: 0.5em;
+        top: 15em;
+    }
+
+    .table-plane tr:nth-of-type(2n){
+        background-color: inherit;
+        display: flex;
+    }
+
+    .img-plane{
+        display: block;
+        position: absolute;
+        right: 0.5em;
+        top: 15em;
+    }
 }
 
 
