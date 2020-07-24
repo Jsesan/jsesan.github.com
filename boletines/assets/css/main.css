@@ -151,10 +151,10 @@ td{
     border-width: 2px;
     border-color: #2196F3;
     padding-bottom: 0.8cm;
-    text-align: left;
+    text-align: center;
     margin-left: 30px;
     margin-right: 30px;
-    font-size: 2em;
+    font-size: 1.5em;
     
 }
 .img-plane{
@@ -205,7 +205,8 @@ td{
         color: #1976D2;
     }
     .title-plane{
-        font-size: 1.5em;
+        font-size: 1em;
+        margin-right: 45px;
     }
 
     .description{
@@ -218,7 +219,12 @@ td{
         width: 50%;
         overflow: scroll;
         left: 0.5em;
-        top: 15em;
+        top: 35%;
+        font-size: 10px;
+    }
+
+    .table-plane caption{
+        border: none;
     }
 
     .table-plane tr:nth-of-type(2n){
