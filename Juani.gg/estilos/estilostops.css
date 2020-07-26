@@ -50,6 +50,7 @@ th{
 
 td{
     padding: 0.2em;
+    text-align: center;
 }
 
 .contenido{
@@ -57,7 +58,6 @@ td{
     max-height: 600px;
     width: fit-content;
     height: fit-content;
-    background-color: white;
     padding: 0.5em;
     font-size: 25px;
     color:white;
@@ -66,7 +66,52 @@ td{
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
-    
+    border-radius: 20px;
 }
 
-@media(max-width:600px)
+.fuentes{
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    text-align: center;
+    color: white;
+}
+
+.pie-contenido{
+    font-size: 15px !important;
+    background-color: white !important;
+    color: black;
+    border-radius: 10px;
+}
+
+@media(max-width:600px){
+
+    .contenido{
+        max-height: 500px;
+        width: 180px;
+        overflow: scroll;
+    }
+
+    .table-champions td{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .table-champions th{
+        display: none;
+    }
+
+    .table-champions td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: violet;
+    }
+
+    .table-champions td:nth-of-type(3){
+        display: none;
+    }
+    .table-champions td:nth-of-type(4){
+        display: none;
+    }
+}
