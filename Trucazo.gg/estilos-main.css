@@ -1,0 +1,78 @@
+/*
+        COLORES
+
+    Principal = #255f24 (Lincoln Green)
+    a decidir =
+        #13262f (Gunmetal)
+        #e9e6ff (Lavender Web)
+        #710627 (Claret)
+        #a1683a (Liver Dogs)
+*/
+
+html{
+    color: black;
+    font-family: 'Oleo Script', cursive;
+}
+
+header{
+    font-size: 25px;
+    text-align: center;
+}
+
+body{
+    background-color: #255f24;
+}
+
+button{
+    height: 50px;
+    width: 80px;
+    margin-left: 15px;
+    background-color: #710627;
+}
+
+a{
+    color: #e9e6ff;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+th{
+    width: 50%;
+    border-bottom: solid black;
+}
+
+
+.titulocontador{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.contador{
+    height: 400px;
+    max-width: 800px;
+    width: 80%;
+    background-color: #E6BF91;
+    margin-top: 1em;
+    position: relative;
+    left: 8%; /*Cambiar para escritorio*/
+    border: solid #710627 10px ;
+}
+
+.puntos-nosotros{
+    border-right: solid black;
+}
+
+@media(min-width:600px){
+    .contador{
+        left: 23%;
+    }
+}
